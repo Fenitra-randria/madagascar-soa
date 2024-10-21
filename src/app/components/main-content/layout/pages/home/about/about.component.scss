@@ -1,0 +1,31 @@
+@use "../../../../../../../assets/scss/commons/variable" as abo;
+
+.boxAbout {
+  &__action {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  &__description {
+    text-align: center;
+  }
+}
+.titleSect {
+  padding-top: 0;
+  text-align: center;
+  color: abo.$color-primary1;
+  margin-bottom: 20px;
+  span {
+    color: abo.$color-primary2;
+  }
+}
+.anim-about {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 10px;
+}
+
+.sectAbout {
+  position: relative;
+}

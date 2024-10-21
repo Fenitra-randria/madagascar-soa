@@ -3,22 +3,38 @@
     <div class="itemBanniere">
       <div class="itemIntern">
         <div class="banniereTxt">
-          <figure>
-            <img
-              class="img-fluid"
-              src="assets/images/slides/slide1.png"
-              alt="Banniere"
-            />
-          </figure>
+          <ngx-slick-carousel
+            class="carousel"
+            #slickModal="slick-carousel"
+            [config]="slideConfig"
+            (init)="slickInit($event)"
+          >
+            @for (slide of slides; track slide.img) {
+            <figure ngxSlickItem class="slide">
+              <img class="img-fluid" alt="Banniere" [src]="slide.img" />
+            </figure>
+            }
+          </ngx-slick-carousel>
+
           <div class="contentBanner">
             <div class="container">
               <div class="cnttxtSlid">
-                <h2 class="color-primary2">Lorem, ipsum dolor.</h2>
+                <h2>
+                  Bienvenue à Madagascar:
+                  <span class="fontfamily2 color-primary2"
+                    >L'île des Merveilles 🇲🇬</span
+                  >
+                </h2>
                 <div class="cnttxtSlid__description">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Laudantium!
+                  Découvrez une île extraordinaire, où la nature sauvage
+                  rencontre des traditions séculaires. Partez à l’aventure à
+                  travers des paysages inexplorés, plongez dans une culture
+                  riche et unique, et laissez-vous émerveiller par la
+                  biodiversité sans pareille de Madagascar.
                 </div>
-                <a href="#" class="btn btn-lite btn-outline">En savoir +</a>
+                <a href="#" class="btn btn-lite btn-outline"
+                  >Explorer Madagascar</a
+                >
               </div>
             </div>
           </div>

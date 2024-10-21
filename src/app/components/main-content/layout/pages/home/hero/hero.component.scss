@@ -6,7 +6,7 @@
   left: 0;
   display: flex;
   align-items: center;
-  background: rgb(173 173 173 / 21%);
+  background: rgb(0 0 0 / 28%);
   padding-top: 125px;
   & > .container {
     width: 100%;
@@ -23,9 +23,13 @@
     font-size: 35px;
     text-transform: none;
     text-shadow: 3px 2px #00000078;
+    color: #fff;
   }
   &__description {
     color: #fff;
+    font-size: 18px;
+    text-shadow: 0 0 3px BLACK;
+    text-align: center;
   }
   a.btn-lite {
     color: #fff !important;

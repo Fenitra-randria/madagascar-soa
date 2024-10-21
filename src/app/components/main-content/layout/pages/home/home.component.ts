@@ -4,11 +4,12 @@ import { HistoriqueRegionComponent } from "./historique-region/historique-region
 import { NatureBioComponent } from "./nature-bio/nature-bio.component";
 import { TourismeComponent } from "./tourisme/tourisme.component";
 import { CuisineComponent } from "./cuisine/cuisine.component";
+import { AboutComponent } from "./about/about.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeroComponent, HistoriqueRegionComponent, NatureBioComponent, TourismeComponent, CuisineComponent],
+  imports: [HeroComponent, HistoriqueRegionComponent, NatureBioComponent, TourismeComponent, CuisineComponent, AboutComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
