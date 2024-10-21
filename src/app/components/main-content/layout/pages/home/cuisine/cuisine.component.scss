@@ -1,0 +1,131 @@
+@use "../../../../../../../assets/scss/commons/variable" as tor;
+
+.titleSect {
+  padding-top: 0;
+  text-align: left;
+  color: tor.$color-primary1;
+  span {
+    color: tor.$color-primary2;
+  }
+}
+
+.marquee {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &-content {
+    display: flex;
+    animation: marquee 150s linear infinite running;
+
+    &-reverse {
+      animation: marquee-reverse 150s linear infinite running;
+    }
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  &-tag {
+    width: 200px;
+    height: 200px;
+    padding: 0.5em;
+    background: rgba(255, 255, 255, 0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    transform: rotate(-90deg);
+    position: relative;
+    &__content {
+      position: relative;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 6px;
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translate(-50%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes marquee-reverse {
+  0% {
+    transform: translate(-50%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
+.imgCuisine {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    transition: all 0.5s;
+    box-shadow: 0 0 6px #f46760;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.marquee-css {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+  margin-left: -58px;
+}
+.sectCuisine {
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(247, 247, 247);
+}
+
+.boxCuisine {
+  &__description {
+    width: calc(100% - 650px);
+    .btn-lite {
+      margin-top: 30px;
+    }
+  }
+}
+.text-description-recette {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-size: 12px;
+  text-shadow: 0px 0px 3px #fff;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s;
+  &:hover {
+    opacity: 1;
+    background: linear-gradient(
+      0deg,
+      #f46760 0%,
+      #f46760 0%,
+      rgba(0, 0, 0, 0) 50%
+    );
+  }
+}

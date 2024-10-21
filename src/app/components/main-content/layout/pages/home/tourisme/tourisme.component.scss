@@ -1,21 +1,33 @@
-@use "../../../../../../../assets/scss/commons/variable" as hist;
+@use "../../../../../../../assets/scss/commons/variable" as tor;
 
 .titleSect {
   padding-top: 0;
-  text-align: center;
-  color: hist.$color-primary1;
-  margin-bottom: 20px;
+  text-align: left;
+  color: tor.$color-primary1;
   span {
-    color: hist.$color-primary2;
+    color: tor.$color-primary2;
   }
 }
-.countries {
+.boxTourisme {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 15px;
-  align-items: center;
   &__item {
-    width: 16.666%;
+    width: calc(25% - 11.5px);
+    &:first-child {
+      width: calc(50% - 7.5px);
+    }
+    p {
+      span {
+        color: tor.$color-primary1;
+      }
+    }
+    &--action {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
   }
 }
 .cardCountrie {

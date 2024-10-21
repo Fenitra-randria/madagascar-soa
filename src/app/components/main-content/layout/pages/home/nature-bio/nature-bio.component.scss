@@ -11,6 +11,8 @@
 .sectNatureBio {
   background: linear-gradient(90deg, rgb(247, 247, 247) 50%, #000 50%);
   position: relative;
+  margin: 5rem 0rem;
+
   &::after {
     content: "";
     position: absolute;
