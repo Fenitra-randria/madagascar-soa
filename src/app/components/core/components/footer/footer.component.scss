@@ -1,0 +1,17 @@
+footer {
+  background-image: url("/assets/images/antananarivo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footerBlur {
+  backdrop-filter: blur(7px);
+  background-color: #0000005e;
+}
+.itemLink svg {
+  fill: #fff;
+  stroke: #fff;
+  width: 40px;
+  height: 40px;
+}

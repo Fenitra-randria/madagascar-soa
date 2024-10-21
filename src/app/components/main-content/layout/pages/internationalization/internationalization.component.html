@@ -1,0 +1,6 @@
+<h2>{{ "title" | translate }}</h2>
+<select (change)="changeLang($event)">
+  @for (lang of availableLanguages; track $index) {
+  <option [value]="lang">{{ lang }}</option>
+  }
+</select>

@@ -1,0 +1,180 @@
+@use "../commons/" as *;
+
+#mainWrapper {
+  section {
+    @include padding(3rem 0rem);
+    .testScroll-bar {
+      height: 200px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  }
+  .listrs {
+    font-size: 3rem;
+    color: $color-primary1;
+    text-align: center;
+  }
+}
+.mainColumn2 {
+  @include gridColumn(2);
+  @include max(992px) {
+    @include gridColumn(1);
+  }
+}
+.mainColumn3 {
+  @include gridColumn(3);
+  @include max(992px) {
+    @include gridColumn(2);
+  }
+  @include max(635px) {
+    @include gridColumn(1);
+  }
+}
+.mainColumn4 {
+  @include gridColumn(4);
+  @include max(992px) {
+    @include gridColumn(2);
+  }
+}
+.mainColumn5 {
+  @include gridColumn(5);
+  @include max(992px) {
+    @include gridColumn(2);
+  }
+}
+.listBanniere {
+  .itemBanniere {
+    figure {
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+.listColor {
+  @include gridColumn(6, 30px);
+  @include max(992px) {
+    @include gridColumn(4, 30px);
+  }
+  @include max(635px) {
+    @include gridColumn(3, 30px);
+  }
+  .itemColor {
+    .cntColor {
+      height: 120px;
+      box-shadow: 0 1px 7px #00000029;
+    }
+    .cntColor {
+      background-image: linear-gradient(
+        45deg,
+        #ffffff 25%,
+        #4a4848 25%,
+        #4a4848 50%,
+        #ffffff 50%,
+        #ffffff 75%,
+        #4a4848 75%,
+        #4a4848 100%
+      );
+      background-size: 28.28px 28.28px;
+      .colorIntern {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .primary1 {
+      .colorIntern {
+        background-color: $color-primary1;
+      }
+    }
+    .primary2 {
+      .colorIntern {
+        background-color: $color-primary2;
+      }
+    }
+    .primary3 {
+      .colorIntern {
+        background-color: $color-primary3;
+      }
+    }
+    .secondary1 {
+      .colorIntern {
+        background-color: $color-secondary1;
+      }
+    }
+    .secondary2 {
+      .colorIntern {
+        background-color: $color-secondary2;
+      }
+    }
+    .secondary3 {
+      .colorIntern {
+        background-color: $color-secondary3;
+      }
+    }
+    .txtcolor1 {
+      .colorIntern {
+        background-color: $txt-color-default;
+      }
+    }
+    .txtcolor2 {
+      .colorIntern {
+        background-color: $txt-color-1;
+      }
+    }
+    .txtcolor3 {
+      .colorIntern {
+        background-color: $txt-color-2;
+      }
+    }
+    .graycolor1 {
+      .colorIntern {
+        background-color: $gray-dark;
+      }
+    }
+    .graycolor2 {
+      .colorIntern {
+        background-color: $gray-light;
+      }
+    }
+    .graycolor3 {
+      .colorIntern {
+        background-color: $white;
+      }
+    }
+    .colortxt {
+      font-size: 20px;
+      font-weight: 700;
+      padding: 10px;
+    }
+  }
+}
+.setBanniere {
+  padding-top: 0 !important;
+}
+.titleSection {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #242424;
+  font-weight: 700;
+}
+.titleSection2 {
+  color: #242424;
+}
+.fontfamily1 {
+  font-family: $fontFamily-default;
+}
+.fontfamily2 {
+  font-family: $fontFamily2;
+  margin-bottom: 30px;
+}
+.fontfamily1,
+.fontfamily2 {
+  font-size: 38px;
+  padding: 2rem 0;
+  border-bottom: 1px solid #242424;
+  h3 {
+    font-size: 25px;
+  }
+}

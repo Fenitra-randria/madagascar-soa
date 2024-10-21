@@ -1,0 +1,56 @@
+@use "../commons/" as *;
+
+// btn
+:focus,
+button:focus {
+  outline: none;
+}
+.btn.focus,
+.btn:focus,
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.btn,
+a.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  @include font-size($btn-fontSize);
+  font-weight: $btn-fontWeight;
+  line-height: $btn-lineHeight;
+  letter-spacing: $btn-letterSpacing;
+  color: $btn-color !important;
+  text-transform: $btn-textTransform;
+  background: $btn-bg;
+  text-decoration: none !important;
+  @include padding($btn-padding);
+  position: relative;
+  border-radius: $btn-borderRadius;
+  border: $btn-border;
+  transition: $transition-default;
+  &:hover {
+    background: $btn-bg-hover;
+    border-color: $btn-bg-hover;
+  }
+}
+.btn-custom,
+a.btn-custom {
+  color: $btn2-color !important;
+  background: $btn2-bg;
+  border-color: $btn2-bg;
+  &:hover {
+    background: $btn2-bg-hover;
+    border-color: $btn2-bg-hover;
+  }
+}
+.btn-lite,
+a.btn-lite {
+  color: $btnLite-color !important;
+  background: $btnLite-bg;
+  &:hover {
+    color: $btnLite-hover !important;
+    background: $btnLite-bg-hover;
+    border-color: $btnLite-bg;
+  }
+}

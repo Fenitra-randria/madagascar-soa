@@ -1,0 +1,48 @@
+@use "../commons/" as *;
+
+.sectHeader {
+  width: 100%;
+  z-index: 99;
+  background: $header-bg;
+  box-shadow: $boxShadow;
+  &--sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: rgba(17, 33, 46, 0.8);
+  }
+}
+
+.headerIntern {
+  @include flex-center(space-between);
+  .cntlogo {
+    a {
+      display: block;
+      width: 200px;
+      padding: 0;
+      @include max(992px) {
+        width: 130px;
+      }
+      img {
+        object-fit: contain;
+        object-position: left;
+        height: 65px;
+        width: fit-content;
+      }
+    }
+  }
+}
+.header-sign {
+  background: rgba(17, 33, 46, 0.8);
+  position: relative;
+  z-index: 3;
+}
+
+.flex-header-sign {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  font-size: 14px;
+}

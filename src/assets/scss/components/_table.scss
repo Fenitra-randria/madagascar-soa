@@ -1,0 +1,32 @@
+@use "../commons/" as *;
+
+// table
+table {
+  width: 100%;
+  border: $table-border;
+  background: $table-bg;
+  th,
+  td {
+    padding: $table-paddingCell;
+    border-bottom: $table-borderCell;
+  }
+  thead {
+    font-size: $table-sizeTh;
+    tr {
+      th {
+        background: $gray-light;
+        text-align: $table-positionTh;
+        font-weight: $table-fontWeightTh;
+      }
+    }
+  }
+  tbody {
+    font-size: $table-sizeTh;
+    tr {
+      td {
+        background: $white;
+        text-align: $table-positionTd;
+      }
+    }
+  }
+}

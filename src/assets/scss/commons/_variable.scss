@@ -1,0 +1,275 @@
+//path
+$pathFont: "/assets/fonts/font-family"; // path font-family
+$pathFontIcon: "/assets/fonts/font-icon"; // path font-family
+$pathImg: "/assets/images"; // path image
+
+// layout -------------------------------------------
+$container: 1379px; // width container
+$containerPadding: 0 1.5rem; // padding container
+$margin-p: 0; // <p> : margin-buttom
+$borderRadius: 4px; // border-radius General
+$borderRadius2: 6px; // border-radius seconder (optionel)
+$borderRadius3: 8px; // border-radius tertiary (optionel)
+$transition-default: all 0.5s ease-in-out; // transition General
+$boxShadow: 0 0px 1px #fff; // box-shadow General
+
+// Primary color (chart)
+$color-primary1: #4c7316;
+$color-primary2: #f46760;
+$color-primary3: #faeeba;
+// Secondary color
+$color-secondary1: #1672ec;
+$color-secondary2: #d0e3fb;
+$color-secondary3: transparent;
+// Text color
+$txt-color-default: #3e3e3e; // color default
+$txt-color-1: #616161;
+$txt-color-2: #a1a1a1;
+$txt-color-3: #272727;
+// generic color background
+$gray-dark: #f8f8f8;
+$gray-light: #f8f8f8;
+$white: #fff;
+
+// default ------------------------------------------
+$fontFamily-default: "inter"; // font-family primary
+$fontFamily2: "inter"; // font-family secondary
+$fontIcon: "socle";
+$main-bg: $gray-dark; // background global des pages
+
+$fontSize1: 1.4rem; // font-size global
+$fontSize2: 1.6rem; // font-size global seconde
+
+$lineHeight1: 1.5; // line-height global
+$lineHeight2: 1.21; // line-height global seconde
+
+$lettreSpacing1: 0.9px; // lettre-spacing global
+$lettreSpacing2: 0; // lettre-spacing global seconde
+
+$thin: 200; // Thin (Hairline)
+$extraLight: 200; // Extra Light (Ultra Light)
+$light: 300; // Light
+$normal: 400; // Normal
+$medium: 500; // Medium
+$semiBold: 600; // Semi Bold (Demi Bold)
+$bold: 700; // Bold
+$extraBold: 800; // Extra Bold (Ultra Bold)
+$heavy: 900; // Black (Heavy)
+
+// heading : Les balises Titre ----------------------
+
+// H1
+$fontSize-h1: 2.4rem;
+$marginBottom-h1: 0;
+$textTransform-h1: none;
+$color-h1: $txt-color-1;
+
+// H2
+$fontSize-h2: 1.6rem;
+$marginBottom-h2: 0;
+$textTransform-h2: uppercase;
+$color-h2: $txt-color-3;
+
+// H3
+$fontSize-h3: 1.2rem;
+$marginBottom-h3: 0;
+$textTransform-h3: uppercase;
+$color-h3: $txt-color-default;
+
+// H4
+$fontSize-h4: 1.4rem;
+$marginBottom-h4: 0;
+$textTransform-h4: none;
+$color-h4: $txt-color-default;
+
+// H5
+$fontSize-h5: 1rem;
+$marginBottom-h5: 0;
+$textTransform-h5: none;
+$color-h5: $color-secondary1;
+
+// H6
+$fontSize-h6: 1rem;
+$marginBottom-h6: 0;
+$textTransform-h6: uppercase;
+$color-h6: $txt-color-default;
+
+// link : balise lien <a>
+$linkColor: $color-secondary1; // color par defaut
+$linkColor-hover: #1265d3; // color au survol
+$linkTextDecoration: none; // text-decoration
+
+// blockquote --------------------------------------
+$blockquote-padding: 20px 50px;
+$blockquote-shadow: 0 1px 7px #00000029;
+$blockquote-radius: 15px;
+$blockquote-bg: $white; // background
+$blockquote-fontStyle: italic;
+
+// blockquote icon
+$quote-icn: "\e904"; // id Icomoon
+$quote-fontFamily: $fontIcon;
+$quote-size: 25px;
+$quote-color: $color-primary2;
+$quote-left-positionTop: 10px;
+$quote-left-positionLeft: 15px;
+$quote-right-positionBottom: 10px;
+$quote-right-positionRight: 15px;
+// blockquote icon effet miroire quote right
+$quote-right-rotation: scaleX(-1);
+
+// scroll : scroll bar -----------------------------
+$srollbar-thumb: $txt-color-2; // bar color
+$scrollbar-track: #e4e4e4; // scroll color
+$scrollbar-borderRadius: 0; // border-radius scroll bar
+$scrollbar-boxShadow: inset 0 0 5px #e4e4e4; // shadow intern
+$scrollbar-width: 5px; // width scrollbar
+$scrollbar-height: 6px;
+
+// btn default --------------------------------------
+$btn-fontSize: 1.4rem;
+$btn-fontWeight: 600;
+$btn-lineHeight: 1.2;
+$btn-letterSpacing: 0.8px;
+$btn-color: $txt-color-3;
+$btn-textTransform: none;
+$btn-bg: $color-primary1;
+$btn-padding: 0.8rem 1rem;
+$btn-borderRadius: 4px;
+$btn-border: 1px solid $color-primary1;
+// btn hover
+$btn-bg-hover: $color-primary2;
+
+// btn-custom (btn secondary)
+$btn2-color: $white;
+$btn2-bg: $color-primary2;
+$btn2-border: 1px solid $color-primary2;
+// btn-custom (btn secondary) hover
+$btn2-bg-hover: $color-primary2;
+
+// btn-lite
+$btnLite-color: $txt-color-3;
+$btnLite-bg: transparent !important;
+// btn-lite hover
+$btnLite-hover: $white;
+$btnLite-bg-hover: $color-primary1 !important;
+
+// list -------------------------------------------
+$list-paddingLeft: 0;
+$list-marginBottom: 0;
+$list-markerColor: $color-primary1;
+$list-markerSize: 0;
+// list ul
+$list-style: none;
+// list ol (1,2,..)
+$list-style-ord: decimal;
+
+// Tableau ---------------------------------------
+$table-border: 1px solid #ccc;
+$table-bg: $white;
+$table-paddingCell: 10px; // padding th td
+$table-borderCell: 1px solid #ccc; // border th td
+// th (thead)
+$table-bgTh: $gray-light; // background th
+$table-sizeTh: 16px; // font-size th
+$table-positionTh: left; // text-align th
+$table-fontWeightTh: 700; // font-weight th
+//td (tbody)
+$table-bgTd: $white; // background td
+$table-sizeTh: 12px; // font-size th
+$table-positionTd: left; // text-align td
+
+// slick-slider ----------------------------------
+// bouton de navigation (arrow)
+$slider-arrow-width: 50px;
+$slider-arrow-height: 50px;
+$slider-arrow-radius: 5px;
+$slider-arrow-bg: rgba(255, 255, 255, 0.9);
+$slider-arrow-bg-hover: rgba(255, 255, 255, 0.9);
+$slider-arrow-shadow: 0px 3px 6px #00000029;
+$slider-arrow-positon: 0;
+// bouton de navigation intern (chevron)
+$arrow-chevron-border: 3px solid #8f8f8f;
+$arrow-chevron-border-hover: #3b3b3b; // border-color
+$arrow-chevron-width: 20px;
+$arrow-chevron-height: 20px;
+// paged de navigation (dots)
+$dots-postion-bottom: 30px;
+$dots-postion-items: center; // justify-content
+$dots-items-gap: 6px; // justify-content
+$dots-item-width: 32px;
+$dots-item-height: 5px;
+$dots-item-radius: 3px;
+$dots-item-bg: $white;
+$dots-item-bg-active: $color-primary2;
+// text banniere
+$banniere-txtBg: rgba(255, 255, 255, 0.8);
+$banniere-txtWidth: 510px;
+$banniere-txtWidth-mobile: 275px;
+$banniere-txtPadding: 30px;
+$banniere-txtRadius: 10px;
+
+// btn scrollTop -----------------------------------------------
+$scrollTop-positionBottom: 30px;
+$scrollTop-positionRight: 30px;
+$scrollTop-width: 50px;
+$scrollTop-height: 50px;
+$scrollTop-radius: 5px;
+$scrollTop-bg: rgba(255, 255, 255, 0.9);
+$scrollTop-shadow: 0px 3px 6px #00000029;
+$scrollTop-padding: 10px;
+$scrollTop-colorTxt: #000;
+$scrollTop-arrowSize: 3px;
+$scrollTop-arrowColor: #8f8f8f;
+
+// form -------------------------------------------
+$form-groupGap: 20px; // groupFields grid-gap
+$form-itemMargin: 10px; // itemField margin-bottom
+// label
+$form-labelSize: 12px; // font-size label
+$form-labelWeight: 700; // font-weight label
+$form-labelTextTransform: uppercase; // text-transform label
+$form-labelMarginBottom: 5px; // text-transform label
+// input & textarea
+$form-inputPadding: 5px 15px; // padding input
+$form-inputborder: 1px solid #ccc; // border input
+$form-inputbg: $white; // background input
+$form-inputRadius: 5px; // border-radius input
+$form-inputHeight: 40px; // height input
+// checkbox
+$form-checkLabelSize: 13px; // label font-size
+$form-checkFontWeight: 400; // label font-weight
+$form-checkTextTransform: none; // label font-weight
+$form-checkMarginRight: 5px; // checkbox margin-right
+$form-checkWidth: 14px; // checkbox width
+$form-checkHeight: 14px; // checkbox height
+$form-checkRadius: 3px; // checkbox border-radius
+$form-checkedColor: $color-primary1; // checked color
+// radio
+$form-radioLabelSize: 13px; // label font-size
+$form-radioFontWeight: 400; // label font-weight
+$form-radioTextTransform: none; // label font-weight
+$form-radioMarginRight: 5px; // radio margin-right
+$form-radioWidth: 14px; // radio width
+$form-radioHeight: 14px; // radio height
+$form-radioRadius: 50%; // radio border-radius
+$form-radioedColor: $color-primary1; // radion checked color
+
+//Header ---------------------------------------------
+$header-bg: $white;
+// logo
+$header-logoWidth: 200px; // logo width
+$header-logoWidth-mobile: 130px; // logo width mobile
+$header-logoPadding: 20px 0; // logo padding
+// Menu
+$nav-fontFamily: $fontFamily-default; // menu font-family
+$nav-size: 14px; // menu font-size
+$nav-fontWeight: 500; // menu font-size
+$nav-color: $white; // menu color
+$nav-color-hover: $color-primary1; // menu color actif et hover
+$nav-gap: 25px; // gap item
+// Menu Mobile
+$nav-mobile-btnColor: $nav-color-hover; // color 3 band
+$nav-mobile-btnBg: $white; // background btn nav
+$nav-mobile-Bg: $white; // background nav
+$nav-mobile-shadow: 0 13px 26px #00000029; // box-shadow nav
