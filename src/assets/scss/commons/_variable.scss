@@ -32,8 +32,8 @@ $gray-light: #f8f8f8;
 $white: #fff;
 
 // default ------------------------------------------
-$fontFamily-default: "inter"; // font-family primary
-$fontFamily2: "inter"; // font-family secondary
+$fontFamily-default: "poppins", sans-serif; // font-family primary
+$fontFamily2: "dancing-script", sans-serif; // font-family secondary
 $fontIcon: "socle";
 $main-bg: $gray-dark; // background global des pages
 
@@ -67,13 +67,13 @@ $color-h1: $txt-color-1;
 // H2
 $fontSize-h2: 1.6rem;
 $marginBottom-h2: 0;
-$textTransform-h2: uppercase;
+$textTransform-h2: none;
 $color-h2: $txt-color-3;
 
 // H3
 $fontSize-h3: 1.2rem;
 $marginBottom-h3: 0;
-$textTransform-h3: uppercase;
+$textTransform-h3: none;
 $color-h3: $txt-color-default;
 
 // H4
@@ -91,7 +91,7 @@ $color-h5: $color-secondary1;
 // H6
 $fontSize-h6: 1rem;
 $marginBottom-h6: 0;
-$textTransform-h6: uppercase;
+$textTransform-h6: none;
 $color-h6: $txt-color-default;
 
 // link : balise lien <a>

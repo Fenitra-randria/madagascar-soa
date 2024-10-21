@@ -2,7 +2,7 @@
 
 #mainWrapper {
   section {
-    @include padding(3rem 0rem);
+    @include padding(5rem 0rem);
     .testScroll-bar {
       height: 200px;
       overflow-y: auto;
@@ -173,7 +173,7 @@
 .fontfamily2 {
   font-size: 38px;
   padding: 2rem 0;
-  border-bottom: 1px solid #242424;
+  // border-bottom: 1px solid #242424;
   h3 {
     font-size: 25px;
   }
